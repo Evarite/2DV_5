@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "name": "InputActionsAsset",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "11760bd9-5c36-4ee3-8d0c-11947dd2f7bc",
+            "actions": [
+                {
+                    "name": "Fly",
+                    "type": "Button",
+                    "id": "4162b485-f050-48ee-ab0e-a6502ace6cf8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "46728ed7-3e26-4dfc-82cc-58bfe66dc96a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
