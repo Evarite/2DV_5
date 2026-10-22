@@ -6,7 +6,7 @@ namespace Lab.Player
     {
         public void Die()
         {
-
+            Debug.Log("I need to die.");
         }
     }
 }

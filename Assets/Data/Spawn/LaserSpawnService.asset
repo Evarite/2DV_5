@@ -18,7 +18,7 @@ MonoBehaviour:
     _minY: -5
     _maxY: 5
     _minXDist: 10
-    _maxXDist: 30
+    _maxXDist: 50
     _minAngle: -90
     _maxAngle: 90
     _minScaleY: 1

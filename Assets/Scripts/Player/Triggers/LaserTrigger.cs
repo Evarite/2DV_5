@@ -7,7 +7,6 @@ namespace Lab.Player.Triggers
     {
         [Inject] private PlayerDeathHandler _deathHandler;
 
-        protected override void HandleTriggerEnter(Collider2D collision) =>
-            _deathHandler.Die();
+        protected override void HandleTriggerEnter(Collider2D collision) => _deathHandler.Die();
     }
 }
