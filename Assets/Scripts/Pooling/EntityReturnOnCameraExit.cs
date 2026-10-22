@@ -6,8 +6,8 @@ namespace Lab.Pooling
     {
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.TryGetComponent<PooledEntity>(out var enemy))
-                enemy.Return();
+            if (collision.TryGetComponent<PooledEntity>(out var entity))
+                entity.Return();
         }
     }
 }
