@@ -3184,6 +3184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Lab.Managers.Spawn.SpawnManager
   _spawnServices:
   - {fileID: 11400000, guid: 06c391e0bff05b340906077d35e27ed0, type: 2}
+  - {fileID: 11400000, guid: f57df6f94ec69c448a84d84190110dbc, type: 2}
   _spawnCooldownTime: 3
 --- !u!4 &753098720
 Transform:

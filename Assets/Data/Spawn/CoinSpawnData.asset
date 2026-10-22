@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: CoinSpawnData
   m_EditorClassIdentifier: Assembly-CSharp::Lab.Managers.Spawn.Services.BaseSpawnService
   spawnData:
-    _prefab: {fileID: 0}
+    _prefab: {fileID: -642418371255582908, guid: 96690ee8b30991f46b2caa2b315d1700, type: 3}
     _spawnCount: 2
     _minY: -4
     _maxY: 4
     _minXDist: 10
-    _maxXDist: 30
+    _maxXDist: 50
