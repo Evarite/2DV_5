@@ -2970,7 +2970,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3024,6 +3024,9 @@ MonoBehaviour:
   autoInjectGameObjects: []
   _poolDatas:
   - _prefab: {fileID: 6991467766282220463, guid: b45cb560fc401d643acaa7c4a53e157e, type: 3}
+    _poolSize: 20
+    _canGrow: 1
+  - _prefab: {fileID: -642418371255582908, guid: 96690ee8b30991f46b2caa2b315d1700, type: 3}
     _poolSize: 10
     _canGrow: 1
   _playerTransform: {fileID: 465520190}

@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace Lab.Managers.Spawn.Services
 {
-    [CreateAssetMenu(menuName = "Lab/Spawn/Spawn Service", fileName = "NewSpawnService")]
     public class SpawnService<TSpawnData> : AbstractSpawnService
         where TSpawnData : SpawnData
     {
