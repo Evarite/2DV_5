@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6ca42c654663d469e03d2847914ecc, type: 3}
+  m_Name: CoinSpawnData
+  m_EditorClassIdentifier: Assembly-CSharp::Lab.Managers.Spawn.Services.BaseSpawnService
+  spawnData:
+    _prefab: {fileID: -642418371255582908, guid: 96690ee8b30991f46b2caa2b315d1700, type: 3}
+    _spawnCount: 2
+    _minY: -4
+    _maxY: 4
+    _minXDist: 10
+    _maxXDist: 50

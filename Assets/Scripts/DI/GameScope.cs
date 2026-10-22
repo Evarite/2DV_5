@@ -5,6 +5,8 @@ using Lab.Managers.Spawn;
 using Lab.Player;
 using Lab.Player.Triggers;
 using Lab.Pooling;
+using Lab.Score;
+using Lab.Slide;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -40,6 +42,14 @@ namespace Lab.DI
             //Death
             builder.RegisterComponentInHierarchy<PlayerDeathHandler>();
             builder.RegisterComponentInHierarchy<LaserTrigger>();
+
+            //Score
+            builder.Register<ScoreCounter>(Lifetime.Singleton);
+            builder.RegisterComponentInHierarchy<ScoreHUD>();
+            builder.RegisterComponentInHierarchy<CoinTrigger>();
+
+            //Slide
+            builder.RegisterComponentInHierarchy<SlideRightwards>();
         }
     }
 }

@@ -1,12 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Lab.Player
 {
     public class PlayerDeathHandler : MonoBehaviour
     {
+        public event Action OnDeath;
+
         public void Die()
         {
-            Debug.Log("I need to die.");
+            gameObject.SetActive(false);
+            OnDeath?.Invoke();
         }
     }
 }
