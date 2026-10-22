@@ -1,7 +1,8 @@
-﻿using Lab.Pooling;
+﻿using Lab.Managers.Spawn.Data;
+using Lab.Pooling;
 using UnityEngine;
 
-namespace Lab.Managers.Spawn
+namespace Lab.Managers.Spawn.Services
 {
     [CreateAssetMenu(menuName = "Lab/Spawn/Spawn Service", fileName = "NewSpawnService")]
     public class SpawnService<TSpawnData> : AbstractSpawnService

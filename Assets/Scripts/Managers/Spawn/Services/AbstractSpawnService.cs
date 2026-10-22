@@ -1,7 +1,7 @@
 ﻿using Lab.Pooling;
 using UnityEngine;
 
-namespace Lab.Managers.Spawn
+namespace Lab.Managers.Spawn.Services
 {
     public abstract class AbstractSpawnService : ScriptableObject
     {

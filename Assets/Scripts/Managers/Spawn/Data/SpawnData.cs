@@ -1,7 +1,7 @@
 using Lab.Pooling;
 using UnityEngine;
 
-namespace Lab.Managers.Spawn
+namespace Lab.Managers.Spawn.Data
 {
     [System.Serializable]
     public class SpawnData

@@ -15,8 +15,8 @@ MonoBehaviour:
   spawnData:
     _prefab: {fileID: 6991467766282220463, guid: b45cb560fc401d643acaa7c4a53e157e, type: 3}
     _spawnCount: 3
-    _minY: -4
-    _maxY: 4
+    _minY: -5
+    _maxY: 5
     _minXDist: 10
     _maxXDist: 30
     _minAngle: -90
