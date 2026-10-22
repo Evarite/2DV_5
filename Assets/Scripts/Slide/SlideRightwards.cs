@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Lab.Player;
+using UnityEngine;
+using VContainer;
 
 namespace Lab.Slide
 {
@@ -6,6 +8,14 @@ namespace Lab.Slide
     {
         [SerializeField] private float _speed = 2f;
 
+        [Inject] private PlayerDeathHandler _playerDeathHandler;
+
         private void LateUpdate() => transform.position += Vector3.right * _speed * Time.deltaTime;
+
+        private void OnEnable() => _playerDeathHandler.OnDeath += OnPlayerDied;
+
+        private void OnDisable() => _playerDeathHandler.OnDeath -= OnPlayerDied;
+
+        private void OnPlayerDied() => _speed = 0f;
     }
 }
