@@ -5,6 +5,7 @@ using Lab.Managers.Spawn;
 using Lab.Player.Death;
 using Lab.Player.Triggers;
 using Lab.Pooling;
+using Lab.Restart;
 using Lab.Score;
 using Lab.Slide;
 using UnityEngine;
@@ -50,6 +51,10 @@ namespace Lab.DI
 
             //Slide
             builder.RegisterComponentInHierarchy<SlideRightwards>();
+
+            //Restart
+            builder.RegisterComponentInHierarchy<PoolsCleanUp>();
+            builder.RegisterComponentInHierarchy<ClearScore>();
         }
     }
 }
