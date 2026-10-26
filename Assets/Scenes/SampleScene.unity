@@ -409,9 +409,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startSpeed:
       serializedVersion: 3
-      minMaxState: 0
-      scalar: 4
-      minScalar: 5
+      minMaxState: 3
+      scalar: 6
+      minScalar: 4
       maxCurve:
         serializedVersion: 2
         m_Curve: []
@@ -2587,6 +2587,7 @@ GameObject:
   - component: {fileID: 193721236}
   - component: {fileID: 193721238}
   - component: {fileID: 193721237}
+  - component: {fileID: 193721239}
   m_Layer: 5
   m_Name: Score Count Text
   m_TagString: Untagged
@@ -2713,6 +2714,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193721235}
   m_CullTransparentMesh: 1
+--- !u!114 &193721239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193721235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1131e653325857b44a2aa070ef082866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lab.DeathScreen.ResultScoreText
 --- !u!1001 &314729706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4281,7 +4294,6 @@ GameObject:
   - component: {fileID: 1556119273}
   - component: {fileID: 1556119275}
   - component: {fileID: 1556119274}
-  - component: {fileID: 1556119276}
   m_Layer: 5
   m_Name: Result Text
   m_TagString: Untagged
@@ -4408,18 +4420,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556119272}
   m_CullTransparentMesh: 1
---- !u!114 &1556119276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556119272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1131e653325857b44a2aa070ef082866, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lab.DeathScreen.ResultScoreText
 --- !u!1 &1697077816
 GameObject:
   m_ObjectHideFlags: 0
