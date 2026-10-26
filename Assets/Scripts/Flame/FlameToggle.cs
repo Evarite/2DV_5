@@ -29,6 +29,8 @@ namespace Lab.Flame
         {
             _inputManager.InputActions.Player.Fly.performed -= EnableFlame;
             _inputManager.InputActions.Player.Fly.canceled -= DisableFlame;
+
+            _particleSystem.Stop(false, ParticleSystemStopBehavior.StopEmitting);
         }
 
         private void EnableFlame(InputAction.CallbackContext callbackContext) =>

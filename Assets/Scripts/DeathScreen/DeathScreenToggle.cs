@@ -11,6 +11,7 @@ namespace Lab.DeathScreen
         [SerializeField] private PlayerDeathHandler _deathHandler;
 
         private float _maxOpacity = 1f;
+        private float _minOpacity = 0f;
 
         private void OnEnable() => _deathHandler.OnDeath += ActivateDeathScreen;
 
@@ -22,6 +23,10 @@ namespace Lab.DeathScreen
             _deathScreen.DOFade(_maxOpacity, _fadeTime);
         }
 
-        public void DeactivateDeathScreen() => _deathScreen.gameObject.SetActive(false);
+        public void DeactivateDeathScreen()
+        {
+            _deathScreen.alpha = _minOpacity;
+            _deathScreen.gameObject.SetActive(false);
+        }
     }
 }

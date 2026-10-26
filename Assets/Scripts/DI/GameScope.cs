@@ -1,4 +1,5 @@
 using Lab.Controls;
+using Lab.DeathScreen;
 using Lab.Flame;
 using Lab.Managers;
 using Lab.Managers.Spawn;
@@ -51,6 +52,9 @@ namespace Lab.DI
 
             //Slide
             builder.RegisterComponentInHierarchy<SlideRightwards>();
+
+            //Death Screen
+            builder.RegisterComponentInHierarchy<ResultScoreText>();
 
             //Restart
             builder.RegisterComponentInHierarchy<PoolsCleanUp>();
