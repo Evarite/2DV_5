@@ -49,5 +49,11 @@ namespace Lab.Pooling
             entity = null;
             return false;
         }
+
+        public void ReturnAll()
+        {
+            foreach (var pool in _pools.Values)
+                pool.ReturnAll();
+        }
     }
 }

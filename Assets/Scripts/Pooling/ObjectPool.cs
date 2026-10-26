@@ -12,6 +12,8 @@ namespace Lab.Pooling
         private readonly IObjectResolver _resolver;
         private readonly Queue<PooledEntity> _pool = new();
 
+        private List<PooledEntity> _activeEntities = new();
+
         public ObjectPool(PoolData data, Transform parent, IObjectResolver resolver)
         {
             _data = data;
@@ -38,6 +40,9 @@ namespace Lab.Pooling
             entity = _pool.Dequeue();
             entity.gameObject.SetActive(true);
             entity.OnSpawn();
+
+            _activeEntities.Add(entity);
+
             return true;
         }
 
@@ -48,6 +53,9 @@ namespace Lab.Pooling
 
             entity.OnDespawn();
             entity.gameObject.SetActive(false);
+
+            _activeEntities.Remove(entity);
+
             _pool.Enqueue(entity);
         }
 
@@ -57,6 +65,12 @@ namespace Lab.Pooling
             instance.Bind(this);
             instance.gameObject.SetActive(false);
             return instance;
+        }
+
+        public void ReturnAll()
+        {
+            for (int i = _activeEntities.Count - 1; i >= 0; i--)
+                _activeEntities[i].Return();
         }
     }
 }
