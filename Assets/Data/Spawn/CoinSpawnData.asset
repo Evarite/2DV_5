@@ -17,5 +17,5 @@ MonoBehaviour:
     _spawnCount: 2
     _minY: -4
     _maxY: 4
-    _minXDist: 10
-    _maxXDist: 50
+    _minXDist: 20
+    _maxXDist: 70

@@ -1,4 +1,4 @@
-﻿using Lab.Player;
+﻿using Lab.Player.Death;
 using UnityEngine;
 using VContainer;
 
@@ -10,12 +10,18 @@ namespace Lab.Slide
 
         [Inject] private PlayerDeathHandler _playerDeathHandler;
 
-        private void LateUpdate() => transform.position += Vector3.right * _speed * Time.deltaTime;
+        private float _currentSpeed;
+
+        private void Awake() => _currentSpeed = _speed;
+        private void LateUpdate() => transform.position += Vector3.right * _currentSpeed
+            * Time.deltaTime;
 
         private void OnEnable() => _playerDeathHandler.OnDeath += OnPlayerDied;
 
         private void OnDisable() => _playerDeathHandler.OnDeath -= OnPlayerDied;
 
-        private void OnPlayerDied() => _speed = 0f;
+        private void OnPlayerDied() => _currentSpeed = 0f;
+
+        public void ActivateSlide() => _currentSpeed = _speed;
     }
 }

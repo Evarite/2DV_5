@@ -29,6 +29,8 @@ namespace Lab.Controls
         {
             _inputManager.InputActions.Player.Fly.performed -= OnFlyPerformed;
             _inputManager.InputActions.Player.Fly.canceled -= OnFlyCancelled;
+
+            _flyValue = 0f;
         }
 
         private void FixedUpdate()
