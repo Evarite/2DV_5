@@ -17,8 +17,8 @@ MonoBehaviour:
     _spawnCount: 3
     _minY: -4
     _maxY: 4
-    _minXDist: 10
-    _maxXDist: 50
+    _minXDist: 20
+    _maxXDist: 70
     _minAngle: -90
     _maxAngle: 90
     _minScaleY: 1

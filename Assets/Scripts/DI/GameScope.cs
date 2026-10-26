@@ -2,7 +2,7 @@ using Lab.Controls;
 using Lab.Flame;
 using Lab.Managers;
 using Lab.Managers.Spawn;
-using Lab.Player;
+using Lab.Player.Death;
 using Lab.Player.Triggers;
 using Lab.Pooling;
 using Lab.Score;

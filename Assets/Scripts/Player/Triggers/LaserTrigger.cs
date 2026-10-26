@@ -1,3 +1,4 @@
+using Lab.Player.Death;
 using UnityEngine;
 using VContainer;
 

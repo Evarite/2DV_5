@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Lab.Player
+namespace Lab.Player.Death
 {
     public class PlayerDeathHandler : MonoBehaviour
     {
